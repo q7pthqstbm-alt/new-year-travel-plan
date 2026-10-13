@@ -1,0 +1,801 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>曼谷 · 全家春节旅行规划 / 2.2—2.7</title>
+  <meta name="description" content="6大1小曼谷春节旅行规划模板，可编辑、可分享、可打印。" />
+  <meta name="theme-color" content="#101310" />
+  <meta property="og:title" content="曼谷 · 全家春节旅行规划 / 2.2—2.7" />
+  <meta property="og:description" content="6大1小家庭曼谷旅行攻略：住宿、交通、买菜、遛娃、餐厅和泰拳安排。" />
+  <meta property="og:type" content="website" />
+  <style>
+    :root {
+      --ink: #101310;
+      --ink-2: #151a18;
+      --paper: #f6f4ef;
+      --paper-2: #eeece6;
+      --muted: #aeb7ae;
+      --muted-dark: #65716a;
+      --line: rgba(255,255,255,.13);
+      --line-dark: rgba(16,19,16,.12);
+      --gold: #dfbd7c;
+      --gold-2: #f0d9a6;
+      --sage: #9eb49e;
+      --coral: #df8b6b;
+      --shadow: 0 28px 80px rgba(4, 8, 6, .22);
+      --radius-xl: 32px;
+      --radius-lg: 24px;
+      --radius-md: 16px;
+      --max: 1220px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      letter-spacing: .01em;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+    .editable { outline: none; border-radius: 6px; transition: background .2s ease, box-shadow .2s ease; }
+    .editable:hover, .editable:focus { background: rgba(223,189,124,.13); box-shadow: 0 0 0 1px rgba(223,189,124,.22); }
+    .shell { width: min(calc(100% - 40px), var(--max)); margin: 0 auto; }
+    .eyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: .2em; color: var(--gold); font-weight: 700; }
+    .micro { font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+    .muted { color: var(--muted-dark); }
+
+    .topbar {
+      position: sticky; top: 0; z-index: 30; color: #fff;
+      background: rgba(16,19,16,.78); backdrop-filter: blur(18px);
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+    .topbar-inner { height: 70px; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+    .brand { display: flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 700; letter-spacing: .08em; }
+    .brand-mark { width: 28px; height: 28px; border: 1px solid var(--gold); border-radius: 50%; position: relative; }
+    .brand-mark::before, .brand-mark::after { content: ""; position: absolute; background: var(--gold); }
+    .brand-mark::before { width: 1px; height: 16px; top: 5px; left: 13px; }
+    .brand-mark::after { height: 1px; width: 16px; top: 13px; left: 5px; }
+    .nav { display: flex; gap: 22px; color: #cbd4cc; font-size: 12px; }
+    .nav a { transition: color .25s ease; }
+    .nav a:hover { color: var(--gold-2); }
+    .toolbar { display: flex; gap: 8px; }
+    .tool-btn { border: 1px solid rgba(255,255,255,.18); background: rgba(255,255,255,.06); color: #fff; border-radius: 999px; padding: 9px 13px; font-size: 12px; cursor: pointer; transition: .25s ease; }
+    .tool-btn:hover { border-color: var(--gold); color: var(--gold-2); transform: translateY(-1px); }
+
+    .hero { min-height: 720px; color: #fff; position: relative; overflow: hidden; background: radial-gradient(circle at 74% 20%, rgba(223,189,124,.22), transparent 32%), radial-gradient(circle at 15% 80%, rgba(128,162,134,.2), transparent 28%), linear-gradient(135deg, #101310 0%, #1b2420 52%, #28352e 100%); }
+    .hero::before { content: ""; position: absolute; inset: 0; opacity: .28; background-image: linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px); background-size: 72px 72px; mask-image: linear-gradient(to bottom, black, transparent 85%); }
+    .hero::after { content: "BANGKOK"; position: absolute; right: -24px; bottom: 90px; font-size: clamp(92px, 18vw, 270px); line-height: .8; font-weight: 800; letter-spacing: -.08em; color: rgba(255,255,255,.035); pointer-events: none; }
+    .hero-orb { position: absolute; width: 520px; height: 520px; right: -100px; top: -180px; border: 1px solid rgba(223,189,124,.28); border-radius: 50%; animation: drift 12s ease-in-out infinite alternate; }
+    .hero-orb::after { content: ""; position: absolute; inset: 32px; border: 1px solid rgba(223,189,124,.16); border-radius: 50%; }
+    @keyframes drift { to { transform: translate3d(-22px, 30px, 0) rotate(11deg); } }
+    .hero-inner { position: relative; z-index: 1; padding: 100px 0 92px; display: grid; grid-template-columns: 1.1fr .9fr; gap: 60px; align-items: end; }
+    .hero-kicker { display: flex; align-items: center; gap: 13px; margin-bottom: 34px; color: var(--gold-2); }
+    .hero-kicker::before { content: ""; width: 42px; height: 1px; background: var(--gold); }
+    .hero h1 { margin: 0; max-width: 740px; font-size: clamp(46px, 6vw, 82px); line-height: .96; letter-spacing: -.07em; font-weight: 760; }
+    .hero h1 em { color: var(--gold-2); font-style: normal; }
+    .hero-sub { margin: 30px 0 0; max-width: 560px; color: #bac5bb; line-height: 1.8; font-size: 15px; }
+    .hero-side { justify-self: end; width: min(100%, 360px); }
+    .date-card { border: 1px solid rgba(255,255,255,.16); background: linear-gradient(145deg, rgba(255,255,255,.1), rgba(255,255,255,.04)); backdrop-filter: blur(18px); border-radius: var(--radius-lg); padding: 25px; box-shadow: var(--shadow); }
+    .date-card .label { color: #cbd4cc; font-size: 12px; }
+    .date-card .date { color: var(--gold-2); font-size: 48px; line-height: 1; letter-spacing: -.06em; margin: 10px 0 17px; font-weight: 720; }
+    .date-card .rule { height: 1px; background: rgba(255,255,255,.14); margin: 18px 0; }
+    .date-meta { display: flex; justify-content: space-between; align-items: end; gap: 18px; }
+    .date-meta strong { display: block; font-size: 20px; }
+    .date-meta span { color: #aab7ad; font-size: 11px; }
+    .scroll-cue { position: absolute; bottom: 34px; left: 50%; transform: translateX(-50%); color: #a9b7ad; font-size: 11px; letter-spacing: .16em; display: flex; flex-direction: column; align-items: center; gap: 9px; }
+    .scroll-cue::after { content: ""; width: 1px; height: 34px; background: linear-gradient(var(--gold), transparent); animation: pulse 1.8s infinite; }
+    @keyframes pulse { 50% { opacity: .25; transform: translateY(7px); } }
+
+    .section { padding: 112px 0; }
+    .section.dark { color: #fff; background: var(--ink); }
+    .section.soft { background: var(--paper-2); }
+    .section-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 42px; }
+    .section-title { margin: 8px 0 0; font-size: clamp(30px, 4vw, 48px); line-height: 1.02; letter-spacing: -.055em; }
+    .section-intro { max-width: 350px; color: var(--muted-dark); line-height: 1.7; font-size: 14px; }
+    .dark .section-intro { color: #aeb8af; }
+    .index { color: var(--gold); font-family: Georgia, serif; font-size: 17px; }
+
+    .brief-grid { display: grid; grid-template-columns: 1.25fr .75fr; gap: 18px; }
+    .brief-card { border-radius: var(--radius-xl); min-height: 278px; padding: 30px; position: relative; overflow: hidden; }
+    .brief-card.main { color: #fff; background: linear-gradient(135deg, #23312a, #18221e); }
+    .brief-card.main::after { content: "01"; position: absolute; right: 20px; bottom: -35px; font-size: 180px; letter-spacing: -.1em; color: rgba(255,255,255,.05); font-weight: 800; }
+    .brief-card.light { background: #fff; border: 1px solid var(--line-dark); }
+    .brief-card h3 { margin: 20px 0 11px; font-size: 27px; letter-spacing: -.04em; }
+    .brief-card p { max-width: 440px; margin: 0; color: #b9c8bd; line-height: 1.75; font-size: 14px; }
+    .brief-card.light p { color: var(--muted-dark); }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 24px; }
+    .tag { border: 1px solid rgba(255,255,255,.18); padding: 7px 10px; border-radius: 999px; color: #d5e2d7; font-size: 11px; }
+    .light .tag { border-color: var(--line-dark); color: var(--ink); }
+
+    .budget-shell { background: #19221d; border: 1px solid rgba(255,255,255,.11); border-radius: var(--radius-xl); padding: 30px; box-shadow: var(--shadow); }
+    .budget-top { display: flex; align-items: end; justify-content: space-between; gap: 20px; margin-bottom: 30px; }
+    .budget-total { font-size: clamp(44px, 7vw, 74px); line-height: .9; letter-spacing: -.07em; color: var(--gold-2); font-weight: 750; }
+    .budget-total small { display: block; font-size: 11px; letter-spacing: .14em; color: #9eaba1; margin-bottom: 13px; font-weight: 500; }
+    .budget-note { max-width: 310px; color: #a6b3a8; font-size: 12px; line-height: 1.7; }
+    .budget-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 10px; }
+    .cost-card { min-height: 145px; padding: 17px; border-radius: var(--radius-md); background: rgba(255,255,255,.065); border: 1px solid rgba(255,255,255,.08); transition: .3s ease; }
+    .cost-card:hover { transform: translateY(-5px); background: rgba(255,255,255,.1); border-color: rgba(223,189,124,.55); box-shadow: 0 15px 35px rgba(0,0,0,.14); }
+    .cost-icon { width: 26px; height: 26px; color: var(--gold); margin-bottom: 20px; }
+    .cost-card h4 { margin: 0; font-size: 12px; font-weight: 500; color: #c8d4cb; }
+    .cost-value { display: inline-block; margin-top: 7px; color: #fff; font-size: 21px; letter-spacing: -.04em; }
+    .cost-hint { color: #849288; font-size: 10px; margin-top: 6px; line-height: 1.45; }
+    .budget-foot { display: flex; justify-content: space-between; margin-top: 22px; color: #7f8d82; font-size: 11px; }
+
+    .split { display: grid; grid-template-columns: .9fr 1.1fr; gap: 68px; align-items: start; }
+    .big-copy { font-size: clamp(26px, 3.5vw, 42px); line-height: 1.08; letter-spacing: -.055em; max-width: 470px; }
+    .big-copy em { color: var(--gold); font-style: normal; }
+    .body-copy { margin-top: 22px; color: var(--muted-dark); line-height: 1.8; max-width: 430px; font-size: 14px; }
+    .dark .body-copy { color: #abb7ad; }
+    .info-list { display: grid; gap: 14px; }
+    .info-row { display: grid; grid-template-columns: 44px 1fr auto; align-items: center; gap: 15px; padding: 18px 0; border-bottom: 1px solid var(--line-dark); }
+    .dark .info-row { border-color: var(--line); }
+    .info-num { color: var(--gold); font-family: Georgia, serif; font-size: 17px; }
+    .info-row h4 { margin: 0 0 6px; font-size: 15px; }
+    .info-row p { margin: 0; color: var(--muted-dark); font-size: 12px; line-height: 1.6; }
+    .dark .info-row p { color: #9eaba1; }
+    .pill { padding: 7px 10px; border: 1px solid var(--line-dark); border-radius: 999px; font-size: 10px; color: var(--muted-dark); white-space: nowrap; }
+    .dark .pill { border-color: var(--line); color: #aab6ac; }
+
+    .flight-board { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 30px; padding: 33px; color: #fff; border-radius: var(--radius-xl); background: linear-gradient(115deg, #252d28, #18201b); border: 1px solid rgba(255,255,255,.1); }
+    .airport { font-size: clamp(35px, 5vw, 62px); letter-spacing: -.08em; line-height: .9; }
+    .airport span { display: block; margin-top: 10px; font-size: 11px; letter-spacing: .05em; color: #a9b6aa; }
+    .flight-middle { text-align: center; color: var(--gold-2); }
+    .plane-line { display: flex; align-items: center; gap: 8px; color: var(--gold); margin-bottom: 9px; }
+    .plane-line::before, .plane-line::after { content: ""; width: 52px; height: 1px; background: rgba(223,189,124,.52); }
+    .flight-meta { font-size: 11px; color: #a8b5aa; }
+    .flight-note { margin-top: 22px; display: flex; justify-content: space-between; gap: 20px; font-size: 11px; color: #8e9e92; }
+
+    .stay-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .stay-card { min-height: 330px; padding: 25px; border: 1px solid var(--line-dark); border-radius: var(--radius-lg); background: rgba(255,255,255,.56); display: flex; flex-direction: column; justify-content: space-between; transition: .3s ease; }
+    .stay-card:hover { transform: translateY(-6px); background: #fff; box-shadow: 0 20px 50px rgba(23,27,23,.08); }
+    .stay-card.accent { color: #fff; background: linear-gradient(145deg, #27372d, #172019); border-color: transparent; }
+    .stay-index { font-family: Georgia, serif; font-size: 32px; color: var(--gold); }
+    .stay-card h3 { font-size: 23px; letter-spacing: -.04em; margin: 14px 0 7px; }
+    .stay-card p { margin: 0; color: var(--muted-dark); font-size: 12px; line-height: 1.7; }
+    .accent p { color: #b3c1b5; }
+    .stay-bottom { display: flex; justify-content: space-between; align-items: end; margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--line-dark); }
+    .accent .stay-bottom { border-color: var(--line); }
+    .stay-bottom strong { font-size: 20px; letter-spacing: -.04em; }
+    .stay-bottom span { font-size: 10px; color: var(--muted-dark); }
+    .accent .stay-bottom span { color: #98a79b; }
+    .stay-photo { width: 100%; height: 122px; margin: -25px -25px 0; width: calc(100% + 50px); object-fit: cover; display: block; opacity: .9; filter: saturate(.9); }
+    .accent .stay-photo { opacity: .86; }
+
+    .move-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .move-card { padding: 28px; border-radius: var(--radius-lg); background: #fff; border: 1px solid var(--line-dark); min-height: 225px; }
+    .move-card svg { color: var(--gold); }
+    .move-card h3 { margin: 27px 0 9px; font-size: 18px; }
+    .move-card p { margin: 0; color: var(--muted-dark); line-height: 1.7; font-size: 12px; }
+    .move-cost { display: block; margin-top: 22px; color: var(--ink); font-size: 17px; font-weight: 700; }
+
+    .place-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .place-card { min-height: 330px; padding: 24px; border-radius: var(--radius-lg); color: #fff; position: relative; overflow: hidden; display: flex; flex-direction: column; justify-content: end; background: linear-gradient(140deg, rgba(17,23,19,.32), rgba(13,16,14,.92)), radial-gradient(circle at 80% 10%, #c89561, #3b4a3e 52%, #1a241e); }
+    .place-card:nth-child(2) { background: linear-gradient(140deg, rgba(17,23,19,.24), rgba(13,16,14,.92)), radial-gradient(circle at 20% 8%, #e0af76, #486151 46%, #192019); }
+    .place-card:nth-child(3) { background: linear-gradient(140deg, rgba(17,23,19,.24), rgba(13,16,14,.92)), radial-gradient(circle at 70% 0%, #9ea56d, #384e43 45%, #18201a); }
+    .place-card::before { content: ""; position: absolute; inset: 15px; border: 1px solid rgba(255,255,255,.2); border-radius: 14px; pointer-events: none; }
+    .place-type { position: absolute; top: 26px; left: 26px; color: var(--gold-2); font-size: 10px; letter-spacing: .15em; text-transform: uppercase; }
+    .place-card h3 { margin: 0 0 8px; font-size: 27px; letter-spacing: -.05em; position: relative; }
+    .place-card p { margin: 0; max-width: 280px; color: #c3d0c5; line-height: 1.6; font-size: 12px; position: relative; }
+    .place-foot { display: flex; justify-content: space-between; margin-top: 22px; padding-top: 13px; border-top: 1px solid rgba(255,255,255,.15); color: #a8b5aa; font-size: 10px; position: relative; }
+
+    .food-layout { display: grid; grid-template-columns: 1.2fr .8fr; gap: 15px; }
+    .food-feature { padding: 35px; min-height: 360px; border-radius: var(--radius-xl); background: #d7b77e; color: #1a1d17; position: relative; overflow: hidden; }
+    .food-feature::after { content: "กินดี"; position: absolute; right: -10px; bottom: -50px; font-size: 170px; color: rgba(255,255,255,.23); font-weight: 800; line-height: 1; }
+    .food-feature h3 { max-width: 450px; margin: 28px 0 14px; font-size: clamp(31px, 5vw, 57px); line-height: .98; letter-spacing: -.07em; }
+    .food-feature p { max-width: 420px; color: #554c38; font-size: 13px; line-height: 1.75; }
+    .food-stack { display: grid; gap: 15px; }
+    .food-note { padding: 25px; border-radius: var(--radius-lg); background: #fff; border: 1px solid var(--line-dark); min-height: 172px; }
+    .food-note h4 { margin: 20px 0 8px; font-size: 16px; }
+    .food-note p { margin: 0; color: var(--muted-dark); font-size: 12px; line-height: 1.7; }
+
+    .checklist { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .check-column { padding: 30px; border-radius: var(--radius-xl); background: #fff; border: 1px solid var(--line-dark); }
+    .check-column h3 { margin: 0 0 22px; font-size: 18px; }
+    .check { display: flex; gap: 13px; align-items: start; padding: 14px 0; border-bottom: 1px solid var(--line-dark); font-size: 13px; line-height: 1.55; }
+    .check:last-child { border-bottom: 0; }
+    .check input { appearance: none; width: 17px; height: 17px; margin: 1px 0 0; border: 1px solid #bbc5bd; border-radius: 5px; flex: 0 0 auto; cursor: pointer; }
+    .check input:checked { background: var(--gold); border-color: var(--gold); box-shadow: inset 0 0 0 4px #fff; }
+    .footer { padding: 55px 0 70px; background: var(--ink); color: #fff; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 30px; align-items: end; }
+    .footer h2 { margin: 13px 0 0; font-size: clamp(29px, 5vw, 62px); letter-spacing: -.07em; line-height: .95; }
+    .footer p { max-width: 320px; color: #a6b2a8; font-size: 12px; line-height: 1.7; }
+    .footer-bottom { margin-top: 65px; color: #6d796f; font-size: 10px; display: flex; justify-content: space-between; gap: 15px; }
+
+    /* Parent-friendly information tables */
+    .table-wrap { overflow-x: auto; border: 1px solid var(--line-dark); border-radius: var(--radius-lg); background: #fff; box-shadow: 0 16px 42px rgba(23,27,23,.05); }
+    .dark .table-wrap { border-color: rgba(255,255,255,.12); background: rgba(255,255,255,.045); box-shadow: none; }
+    .data-table { width: 100%; border-collapse: collapse; min-width: 650px; font-size: 13px; }
+    .data-table th { text-align: left; padding: 16px 18px; color: var(--muted-dark); background: rgba(238,236,230,.58); font-size: 10px; letter-spacing: .08em; text-transform: uppercase; font-weight: 700; white-space: nowrap; }
+    .dark .data-table th { color: #b8c4ba; background: rgba(255,255,255,.06); }
+    .data-table td { padding: 17px 18px; border-top: 1px solid var(--line-dark); vertical-align: top; line-height: 1.55; }
+    .dark .data-table td { border-color: rgba(255,255,255,.1); }
+    .data-table tbody tr { transition: background .22s ease; }
+    .data-table tbody tr:hover { background: rgba(223,189,124,.11); }
+    .table-primary { font-weight: 700; color: var(--ink); }
+    .dark .table-primary { color: #fff; }
+    .table-secondary { display: block; margin-top: 3px; color: var(--muted-dark); font-size: 11px; }
+    .dark .table-secondary { color: #9eaba1; }
+    .table-money { white-space: nowrap; font-weight: 750; color: var(--ink); font-size: 17px; letter-spacing: -.04em; }
+    .dark .table-money { color: var(--gold-2); }
+    .table-status { display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; color: var(--muted-dark); font-size: 11px; }
+    .table-status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--gold); box-shadow: 0 0 0 4px rgba(223,189,124,.13); }
+    .table-status.pending::before { background: #b8c0b9; box-shadow: 0 0 0 4px rgba(184,192,185,.18); }
+    .parent-note { margin: 14px 2px 0; color: var(--muted-dark); font-size: 12px; line-height: 1.7; }
+    .dark .parent-note { color: #9eaba1; }
+    .summary-table { margin-top: 20px; }
+    .summary-table .data-table { min-width: 0; }
+    .summary-table .data-table td { width: 25%; }
+    .map-layout { display: grid; grid-template-columns: 1.15fr .85fr; gap: 16px; align-items: stretch; }
+    .map-panel { min-height: 430px; padding: 18px; border-radius: var(--radius-xl); color: #fff; background: linear-gradient(145deg, #23332b, #141b17); border: 1px solid rgba(255,255,255,.1); overflow: hidden; }
+    .map-panel svg { width: 100%; height: 100%; min-height: 380px; display: block; }
+    .map-land { fill: rgba(171,190,167,.08); stroke: rgba(218,228,215,.22); stroke-width: 1.2; }
+    .map-water { fill: none; stroke: rgba(156,196,216,.42); stroke-width: 18; stroke-linecap: round; }
+    .map-road { fill: none; stroke: rgba(255,255,255,.1); stroke-width: 2; stroke-dasharray: 4 7; }
+    .map-route { fill: none; stroke: var(--gold); stroke-width: 2.2; stroke-dasharray: 5 6; animation: routeDash 14s linear infinite; }
+    @keyframes routeDash { to { stroke-dashoffset: -110; } }
+    .map-marker { cursor: pointer; transition: transform .2s ease; transform-origin: center; }
+    .map-marker:hover { transform: scale(1.18); }
+    .map-marker circle:first-child { fill: var(--gold); stroke: #fff; stroke-width: 2; }
+    .map-marker text { fill: #f7f3e9; font-size: 11px; font-weight: 700; paint-order: stroke; stroke: #162019; stroke-width: 3px; stroke-linejoin: round; }
+    .map-legend { display: grid; gap: 13px; padding: 27px; border-radius: var(--radius-xl); background: #fff; border: 1px solid var(--line-dark); }
+    .map-legend h3 { margin: 0 0 4px; font-size: 19px; }
+    .map-legend p { margin: 0 0 13px; color: var(--muted-dark); font-size: 12px; line-height: 1.7; }
+    .legend-item { display: grid; grid-template-columns: 28px 1fr; gap: 12px; align-items: start; padding: 13px 0; border-top: 1px solid var(--line-dark); }
+    .legend-no { color: var(--gold); font-family: Georgia, serif; font-size: 17px; }
+    .legend-item strong { display: block; margin-bottom: 3px; font-size: 13px; }
+    .legend-item span { color: var(--muted-dark); font-size: 11px; line-height: 1.5; }
+    .photo-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 18px; }
+    .photo-card { overflow: hidden; border-radius: var(--radius-lg); background: #fff; border: 1px solid var(--line-dark); }
+    .photo-card img { width: 100%; height: 170px; display: block; object-fit: cover; background: #d8ded5; filter: saturate(.88) contrast(.98); transition: transform .45s ease, filter .45s ease; }
+    .photo-card:hover img { transform: scale(1.045); filter: saturate(1.05) contrast(1.02); }
+    .photo-illustration { width: 100%; height: 170px; display: block; background: #d8ded5; transition: transform .45s ease, filter .45s ease; }
+    .photo-card:hover .photo-illustration { transform: scale(1.045); filter: saturate(1.05) contrast(1.02); }
+    .photo-card-body { padding: 19px; }
+    .photo-card-body h3 { margin: 8px 0 7px; font-size: 19px; letter-spacing: -.04em; }
+    .photo-card-body p { margin: 0; color: var(--muted-dark); font-size: 12px; line-height: 1.7; }
+    .photo-meta { display: flex; justify-content: space-between; gap: 10px; margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--line-dark); color: var(--muted-dark); font-size: 10px; }
+    .market-grid { display: grid; grid-template-columns: .9fr 1.1fr; gap: 16px; margin-top: 18px; }
+    .market-feature { overflow: hidden; border-radius: var(--radius-xl); background: #d3b277; color: #1c2018; }
+    .market-feature img { width: 100%; height: 210px; display: block; object-fit: cover; mix-blend-mode: multiply; opacity: .83; }
+    .market-feature-body { padding: 24px 26px 28px; }
+    .market-feature h3 { margin: 12px 0 8px; font-size: 27px; letter-spacing: -.05em; }
+    .market-feature p { margin: 0; color: #514a38; font-size: 12px; line-height: 1.75; }
+    .market-table .data-table { min-width: 720px; }
+    .stay-distance-table .data-table { min-width: 980px; }
+    .stay-map { margin-top: 18px; }
+    .stay-map .map-panel { min-height: 360px; }
+    .stay-map .map-panel svg { min-height: 310px; }
+    .stay-pin text { fill: #f7f3e9; font-size: 11px; font-weight: 700; paint-order: stroke; stroke: #162019; stroke-width: 3px; stroke-linejoin: round; }
+    .stay-pin circle { fill: var(--coral); stroke: #fff; stroke-width: 2; }
+    .facility-dot { fill: var(--sage); stroke: #fff; stroke-width: 1.5; }
+    .facility-text { fill: #d4dfd3; font-size: 10px; }
+    .stay-route-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 18px; }
+    .route-card { overflow: hidden; border: 1px solid var(--line-dark); border-radius: var(--radius-lg); background: #fff; }
+    .route-card-head { padding: 22px 22px 0; }
+    .route-card-head h3 { margin: 8px 0 5px; font-size: 19px; letter-spacing: -.04em; }
+    .route-card-head p { margin: 0; color: var(--muted-dark); font-size: 11px; line-height: 1.6; }
+    .mini-map { margin: 16px 16px 0; padding: 8px; border-radius: 14px; background: #1a251e; }
+    .mini-map svg { width: 100%; height: 132px; display: block; }
+    .mini-road { fill: none; stroke: rgba(255,255,255,.16); stroke-width: 2; stroke-dasharray: 4 5; }
+    .mini-route { fill: none; stroke: var(--gold); stroke-width: 2.4; stroke-dasharray: 5 6; animation: routeDash 12s linear infinite; }
+    .mini-dot { fill: var(--coral); stroke: #fff; stroke-width: 1.5; }
+    .mini-facility { fill: var(--sage); stroke: #fff; stroke-width: 1.2; }
+    .mini-map text { fill: #e4ede2; font-size: 9px; font-weight: 700; }
+    .route-table { width: 100%; border-collapse: collapse; margin-top: 13px; font-size: 11px; }
+    .route-table td { padding: 10px 15px; border-top: 1px solid var(--line-dark); vertical-align: top; line-height: 1.5; }
+    .route-table td:first-child { color: var(--muted-dark); width: 38%; }
+    .route-table strong { display: block; color: var(--ink); font-size: 12px; }
+    .muay-wrap { margin-top: 18px; }
+    .muay-card { display: grid; grid-template-columns: .9fr 1.1fr; gap: 16px; }
+    .muay-feature { padding: 30px; border-radius: var(--radius-xl); color: #fff; background: linear-gradient(145deg, #3b2a20, #181b17); border: 1px solid rgba(255,255,255,.1); }
+    .muay-feature h3 { margin: 19px 0 10px; font-size: 31px; letter-spacing: -.05em; }
+    .muay-feature p { margin: 0; color: #c7c3b6; font-size: 12px; line-height: 1.75; }
+    .muay-badge { display: inline-flex; padding: 7px 10px; border-radius: 999px; background: rgba(223,189,124,.16); color: var(--gold-2); font-size: 10px; letter-spacing: .08em; }
+    .muay-table .data-table { min-width: 820px; }
+    .muay-note { margin-top: 10px; color: var(--muted-dark); font-size: 11px; line-height: 1.7; }
+    .airbnb-table .data-table { min-width: 980px; }
+    .listing-cell { display: flex; align-items: center; gap: 13px; min-width: 270px; }
+    .listing-img { width: 74px; height: 58px; border-radius: 10px; object-fit: cover; flex: 0 0 auto; background: #d8ded5; }
+    .listing-name { font-weight: 750; line-height: 1.35; }
+    .listing-link { display: inline-block; margin-top: 5px; color: #9b6e2e; font-size: 10px; }
+    .source-note { color: var(--muted-dark); font-size: 11px; line-height: 1.65; margin-top: 12px; }
+    .source-note a { color: #9b6e2e; text-decoration: underline; text-underline-offset: 3px; }
+
+    .reveal { opacity: 0; transform: translateY(26px); transition: opacity .8s ease, transform .8s cubic-bezier(.22,.75,.2,1); }
+    .reveal.is-visible { opacity: 1; transform: translateY(0); }
+    .stagger > * { opacity: 0; transform: translateY(16px); }
+    .stagger.is-visible > * { animation: rise .7s cubic-bezier(.22,.75,.2,1) forwards; }
+    .stagger.is-visible > *:nth-child(2) { animation-delay: .08s; }
+    .stagger.is-visible > *:nth-child(3) { animation-delay: .16s; }
+    .stagger.is-visible > *:nth-child(4) { animation-delay: .24s; }
+    .stagger.is-visible > *:nth-child(5) { animation-delay: .32s; }
+    .stagger.is-visible > *:nth-child(6) { animation-delay: .4s; }
+    @keyframes rise { to { opacity: 1; transform: translateY(0); } }
+
+    @media (max-width: 900px) {
+      .nav { display: none; }
+      .hero-inner, .split, .food-layout { grid-template-columns: 1fr; }
+      .hero { min-height: auto; }
+      .hero-side { justify-self: start; }
+      .budget-grid { grid-template-columns: repeat(3, 1fr); }
+      .stay-grid, .move-grid, .place-grid { grid-template-columns: 1fr 1fr; }
+      .map-layout, .market-grid { grid-template-columns: 1fr; }
+      .photo-grid { grid-template-columns: 1fr 1fr; }
+      .stay-route-grid { grid-template-columns: 1fr; }
+      .muay-card { grid-template-columns: 1fr; }
+      .brief-grid { grid-template-columns: 1fr; }
+      .checklist { grid-template-columns: 1fr; }
+      .footer-inner { align-items: start; flex-direction: column; }
+    }
+    @media (max-width: 560px) {
+      .shell { width: min(calc(100% - 26px), var(--max)); }
+      .topbar-inner { height: 62px; }
+      .toolbar .tool-btn { padding: 8px 9px; font-size: 10px; }
+      .hero-inner { padding: 75px 0 110px; }
+      .section { padding: 75px 0; }
+      .section-head { display: block; }
+      .section-intro { margin-top: 17px; }
+      .budget-shell { padding: 20px; }
+      .budget-top { display: block; }
+      .budget-note { margin-top: 22px; }
+      .budget-grid { grid-template-columns: repeat(2, 1fr); }
+      .flight-board { grid-template-columns: 1fr; text-align: center; gap: 22px; }
+      .flight-note { display: block; line-height: 1.8; }
+      .stay-grid, .move-grid, .place-grid { grid-template-columns: 1fr; }
+      .photo-grid { grid-template-columns: 1fr; }
+      .photo-card img { height: 190px; }
+      .stay-route-grid { grid-template-columns: 1fr; }
+      .place-card { min-height: 270px; }
+      .footer-bottom { display: block; line-height: 1.8; }
+      .footer-bottom span { display: block; margin-top: 8px; }
+      .summary-table .data-table { min-width: 620px; }
+    }
+    @media print {
+      .topbar, .scroll-cue, .toolbar { display: none !important; }
+      body { background: #fff; }
+      .hero { min-height: 520px; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .section, .footer { break-inside: avoid; padding: 45px 0; }
+      .reveal, .stagger > * { opacity: 1 !important; transform: none !important; animation: none !important; }
+      .cost-card, .stay-card, .move-card, .place-card, .food-note, .check-column, .budget-shell, .flight-board { box-shadow: none; break-inside: avoid; }
+      .table-wrap { box-shadow: none; }
+      .place-card, .brief-card.main, .budget-shell, .flight-board, .footer, .section.dark { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="shell topbar-inner">
+      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"></span><span>FAMILY / BANGKOK</span></a>
+      <nav class="nav" aria-label="页面导航">
+        <a href="#brief">概览</a><a href="#budget">预算</a><a href="#map">地图</a><a href="#stay">住宿</a><a href="#places">灵感</a><a href="#muay">泰拳</a><a href="#checklist">清单</a>
+      </nav>
+      <div class="toolbar"><button class="tool-btn" id="saveBtn">保存编辑</button><button class="tool-btn" id="printBtn">打印 / PDF</button></div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-orb" aria-hidden="true"></div>
+      <div class="shell hero-inner">
+        <div>
+          <div class="hero-kicker eyebrow">A family holiday / 2027</div>
+          <h1><span class="editable" contenteditable="true" aria-label="目的地">曼谷</span><br><em>新年见。</em></h1>
+          <p class="hero-sub editable" contenteditable="true" aria-label="封面说明">给 6 位大人和 1 位小朋友的一份慢旅行提案：把城市的热闹、河岸的风与一桌好吃的，留给全家一起记住。</p>
+        </div>
+        <div class="hero-side">
+          <div class="date-card">
+            <div class="label">TRIP WINDOW / 旅行窗口</div>
+            <div class="date editable" contenteditable="true" aria-label="旅行日期">2.2 — 2.7</div>
+            <div class="rule"></div>
+            <div class="date-meta"><div><strong class="editable" contenteditable="true">6 + 1</strong><span>大人 / 小朋友</span></div><div><strong class="editable" contenteditable="true">6D 5N</strong><span>建议节奏</span></div><div><strong class="editable" contenteditable="true">TH</strong><span>Bangkok</span></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-cue">SCROLL TO EXPLORE</div>
+    </section>
+
+    <section class="section" id="brief">
+      <div class="shell">
+        <div class="section-head reveal"><div><div class="index">01 / trip brief</div><h2 class="section-title">先把旅行<br>想成一张画。</h2></div><p class="section-intro editable" contenteditable="true">不赶景点，不做打卡清单。以适合全家人的舒适度为底，把曼谷拆成几块可以慢慢靠近的区域。</p></div>
+        <div class="brief-grid stagger reveal">
+          <article class="brief-card main"><div class="eyebrow">THE RHYTHM</div><h3 class="editable" contenteditable="true">热闹半日，留白半日。</h3><p class="editable" contenteditable="true">上午去一处真正有生活气的市场，下午回到酒店休息或在泳池里消磨时间，晚上再去河边吃一顿好的。</p><div class="tag-row"><span class="tag">低强度移动</span><span class="tag">家庭友好</span><span class="tag">一车到底</span></div></article>
+          <article class="brief-card light"><div class="eyebrow">THE CREW</div><h3 class="editable" contenteditable="true">6 大 1 小</h3><p class="editable" contenteditable="true">优先考虑电梯、房间连通、儿童座椅、遮阴与就近用餐。所有安排保留一个“临时改变”的余地。</p><div class="tag-row"><span class="tag">儿童座椅</span><span class="tag">长辈友好</span><span class="tag">可调整</span></div></article>
+        </div>
+        <div class="summary-table reveal">
+          <div class="table-wrap">
+            <table class="data-table">
+              <thead><tr><th>项目</th><th>本次建议</th><th>目前状态</th><th>备注</th></tr></thead>
+              <tbody>
+                <tr><td><span class="table-primary">出行日期</span></td><td class="editable" contenteditable="true">2/2 — 2/7，共 6 天 5 晚</td><td><span class="table-status">已确定</span></td><td class="table-secondary editable" contenteditable="true">截图航班已按此日期录入</td></tr>
+                <tr><td><span class="table-primary">家庭人数</span></td><td class="editable" contenteditable="true">6 位大人 + 1 位小朋友</td><td><span class="table-status">已确定</span></td><td class="table-secondary editable" contenteditable="true">优先 7 座车辆、儿童座椅</td></tr>
+                <tr><td><span class="table-primary">旅行节奏</span></td><td class="editable" contenteditable="true">每天 1 个主目的地 + 充足休息</td><td><span class="table-status">建议采用</span></td><td class="table-secondary editable" contenteditable="true">不做逐日硬排，可按当天状态调整</td></tr>
+                <tr><td><span class="table-primary">预算口径</span></td><td class="editable" contenteditable="true">舒适型、人民币估算</td><td><span class="table-status pending">待补充</span></td><td class="table-secondary editable" contenteditable="true">酒店确认后，自动替换住宿金额</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="parent-note editable" contenteditable="true">给家人看的版本建议：先看这张表，再看下面的费用与地点明细，不需要一次读完整页。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark" id="budget">
+      <div class="shell">
+        <div class="section-head reveal"><div><div class="index">02 / budget board</div><h2 class="section-title">钱花在哪里，<br>先看懂。</h2></div><p class="section-intro editable" contenteditable="true">机票已按截图录入；住宿改为 3室整租候选，租车按携程自驾 ¥500/天估算。</p></div>
+        <div class="budget-shell reveal">
+          <div class="budget-top"><div class="budget-total"><small>ESTIMATED TOTAL / 示例合计</small><span id="budgetTotal">¥ 35,573</span></div><div class="budget-note editable" contenteditable="true">按 6 大 1 小、2/2–2/7、推荐惠恭王高品质公寓估算。住宿可在 ¥5,000–15,000 区间替换，顶部合计会同步更新。</div></div>
+          <div class="budget-grid stagger reveal">
+            <article class="cost-card"><svg class="cost-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M3 14.5 21 8l-1.6 3.1-7.1 2.7-1.8 6.1-1.5.5-.3-5.5-4.8 1.5z" stroke-width="1.3"/><path d="m8.6 11.1-3.2-2.2" stroke-width="1.3"/></svg><h4>机票 / 7人</h4><span class="cost-value editable" contenteditable="true" data-cost="19733">¥ 19,733</span><div class="cost-hint">¥2,819 / 人 · 截图航班</div></article>
+            <article class="cost-card"><svg class="cost-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 20V7.5L12 4l8 3.5V20" stroke-width="1.3"/><path d="M8 20v-5h8v5M8 9h.01M12 9h.01M16 9h.01" stroke-width="1.3"/></svg><h4>整租 / 5晚</h4><span class="cost-value editable" contenteditable="true" data-cost="6940">¥ 6,940</span><div class="cost-hint">推荐惠恭王公寓 · 3室4床</div></article>
+            <article class="cost-card"><svg class="cost-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 15.5h16M6 15.5l1-6h10l1 6M8 18.5h.01M16 18.5h.01M5 15.5v3h2M19 15.5v3h-2" stroke-width="1.3"/><path d="M9 9.5 10.2 6h3.6L15 9.5" stroke-width="1.3"/></svg><h4>自驾 / 5天</h4><span class="cost-value editable" contenteditable="true" data-cost="3400">¥ 3,400</span><div class="cost-hint">¥500/天租车 + 油费停车</div></article>
+            <article class="cost-card"><svg class="cost-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 5h16v14H4zM8 9h8M8 13h5" stroke-width="1.3"/><path d="m16.5 16.5 2.5 2.5" stroke-width="1.3"/></svg><h4>餐饮 / 6天</h4><span class="cost-value editable" contenteditable="true" data-cost="3200">¥ 3,200</span><div class="cost-hint">家庭餐 + 特色餐</div></article>
+            <article class="cost-card"><svg class="cost-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M5 20 12 4l7 16M7.3 15h9.4M8.8 11.5h6.4" stroke-width="1.3"/></svg><h4>门票 / 体验</h4><span class="cost-value editable" contenteditable="true" data-cost="1500">¥ 1,500</span><div class="cost-hint">景点 + 亲子体验</div></article>
+            <article class="cost-card"><svg class="cost-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="12" r="8" stroke-width="1.3"/><path d="M12 8v8M15 10.5c0-1-1.2-1.7-2.7-1.7s-2.7.7-2.7 1.7 1.2 1.5 2.7 1.7 2.7.7 2.7 1.7-1.2 1.7-2.7 1.7-2.7-.7-2.7-1.7" stroke-width="1.3"/></svg><h4>机动金 / 备用</h4><span class="cost-value editable" contenteditable="true" data-cost="800">¥ 800</span><div class="cost-hint">汇率波动 · 临时支出</div></article>
+          </div>
+          <div class="budget-foot"><span>编辑提示：点击金额即可修改</span><span>预算单位：CNY / 人民币</span></div>
+        </div>
+        <div class="table-wrap reveal" style="margin-top:18px">
+          <table class="data-table">
+            <thead><tr><th>费用项目</th><th>示例金额</th><th>金额说明</th><th>建议做法</th></tr></thead>
+            <tbody>
+              <tr><td><span class="table-primary">机票</span><span class="table-secondary">7 人往返含税</span></td><td><span class="table-money editable" contenteditable="true">¥ 19,733</span></td><td class="table-secondary editable" contenteditable="true">经济舱；按春节期间估算</td><td class="editable" contenteditable="true">先锁定同航班，再比较行李额</td></tr>
+              <tr><td><span class="table-primary">Airbnb 整租</span><span class="table-secondary">1 套房 · 5 晚</span></td><td><span class="table-money editable" contenteditable="true">¥ 6,940</span></td><td class="table-secondary editable" contenteditable="true">A ¥6,940 / B ¥11,843 / C ¥11,584</td><td class="editable" contenteditable="true">A 最适合宝宝日常，B/C 品质更高但需确认第7位入住</td></tr>
+              <tr><td><span class="table-primary">自驾租车</span><span class="table-secondary">2/2–2/7，按 5 天计</span></td><td><span class="table-money editable" contenteditable="true">¥ 3,400</span></td><td class="table-secondary editable" contenteditable="true">租车 ¥2,500 + 油费/停车/高速 ¥900</td><td class="editable" contenteditable="true">携程 ¥500/天为基准；宝宝安全座椅和保险需单独确认</td></tr>
+              <tr><td><span class="table-primary">餐饮</span><span class="table-secondary">全家 6 天</span></td><td><span class="table-money editable" contenteditable="true">¥ 3,200</span></td><td class="table-secondary editable" contenteditable="true">家庭餐 + 1–2 顿特色餐</td><td class="editable" contenteditable="true">每天留一顿简单就近解决</td></tr>
+              <tr><td><span class="table-primary">门票 / 体验</span><span class="table-secondary">景点与亲子活动</span></td><td><span class="table-money editable" contenteditable="true">¥ 1,500</span></td><td class="table-secondary editable" contenteditable="true">根据最终选择替换</td><td class="editable" contenteditable="true">只选 1–2 个最想去的体验</td></tr>
+              <tr><td><span class="table-primary">机动金</span><span class="table-secondary">备用预算</span></td><td><span class="table-money editable" contenteditable="true">¥ 800</span></td><td class="table-secondary editable" contenteditable="true">汇率、临时打车、补给</td><td class="editable" contenteditable="true">建议单独留出，不混入日常花费</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="parent-note editable" contenteditable="true">预算表中的金额是模板示例，酒店确认后可以直接覆盖数字；顶部总计卡保留给快速查看。</p>
+        <div class="table-wrap reveal" style="margin-top:18px">
+          <table class="data-table">
+            <thead><tr><th>住宿版本</th><th>住宿总价</th><th>全程估算</th><th>适合谁</th></tr></thead>
+            <tbody>
+              <tr><td><span class="table-primary">A / Huai Khwang</span></td><td><span class="table-money">¥ 6,940</span></td><td><span class="table-money">¥ 35,573</span></td><td class="editable" contenteditable="true">最适合带宝宝：电梯、Tops、MRT、泳池、随时回房</td></tr>
+              <tr><td><span class="table-primary">B / Kawaii Villa</span></td><td><span class="table-money">¥ 11,843</span></td><td><span class="table-money">¥ 40,476</span></td><td class="editable" contenteditable="true">品质和设计感优先；接受两层无电梯，并确认第7位入住</td></tr>
+              <tr><td><span class="table-primary">C / CityCenter 3BR</span></td><td><span class="table-money">¥ 11,584</span></td><td><span class="table-money">¥ 40,217</span></td><td class="editable" contenteditable="true">市中心便利和私享电梯优先；确认第7位入住</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="flights">
+      <div class="shell split">
+        <div class="reveal"><div class="index">03 / flights</div><div class="big-copy">先把一群人，<br><em>稳稳地送到。</em></div><p class="body-copy editable" contenteditable="true">机票部分先保留结构。建议优先关注“同一航站楼、落地时间、行李额度、改签规则”，7 人一起出发时，便利比几十元差价更重要。</p></div>
+        <div class="reveal"><div class="flight-board" id="airport"><div class="airport"><span class="editable" contenteditable="true">PVG T2</span><span>上海浦东 · 2/2 13:00</span></div><div class="flight-middle"><div class="plane-line">✦</div><div class="flight-meta editable" contenteditable="true">春秋 9C7285 · 4h40m</div></div><div class="airport" style="text-align:right"><span class="editable" contenteditable="true">BKK</span><span>素万那普 · 2/2 16:40</span></div></div><div class="flight-note"><span class="editable" contenteditable="true">返程：TG664 · 2/7 10:35 → 15:50</span><span class="editable" contenteditable="true">往返：¥2,819 / 人</span></div></div>
+      </div>
+    </section>
+
+    <section class="section soft" id="stay">
+      <div class="shell">
+        <div class="section-head reveal"><div><div class="index">04 / stay</div><h2 class="section-title">三套住宿，<br>直接比较。</h2></div><p class="section-intro editable" contenteditable="true">现在已经有三个明确候选：A 是宝宝便利性最稳，B 是品质感和位置最好，C 是带私享电梯的市中心公寓。下面的路线和图片都按各自位置展开。</p></div>
+        <div class="stay-grid stagger reveal">
+          <article class="stay-card accent"><div><img class="stay-photo" loading="lazy" src="https://z1.muscache.cn/im/pictures/hosting/Hosting-1395726935526126187/original/985f8036-a05e-46e4-bd62-6e5baece216c.jpeg" alt="Huai Khwang LuxuryCondo 公寓实景"><div class="stay-index">A</div><h3 class="editable" contenteditable="true">首选 · Huai Khwang LuxuryCondo</h3><p class="editable" contenteditable="true">3室4床，MRT 约2分钟，楼下 Tops / 7‑11 / 餐厅 / 夜市，电梯、高椅、泳池和厨房都更适合带宝宝。</p></div><div class="stay-bottom"><strong class="editable" contenteditable="true">¥ 6,940</strong><span class="editable" contenteditable="true">2/2–2/7 · 5晚</span></div></article>
+          <article class="stay-card"><div><img class="stay-photo" loading="lazy" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1484829683750205465/original/5ab67ee3-fea1-4c1c-8354-05ddfe57de22.jpeg" alt="Kawaii Villa Phrom Phong 别墅实景"><div class="stay-index">B</div><h3 class="editable" contenteditable="true">品质候选 · Kawaii Villa</h3><p class="editable" contenteditable="true">Phrom Phong 3室3卫，约7分钟到 BTS / EmQuartier / Emporium，设计感最好；两层无电梯，需确认第7位入住。</p></div><div class="stay-bottom"><strong class="editable" contenteditable="true">¥ 11,843</strong><span class="editable" contenteditable="true">2/2–2/7 · 5晚</span></div></article>
+          <article class="stay-card"><div><img class="stay-photo" loading="lazy" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1584169624064222613/original/e2213cc6-28ee-4e09-8e0f-b432da0ee7f9.jpeg" alt="CityCenter 3BR Rama 9 公寓实景"><div class="stay-index">C</div><h3 class="editable" contenteditable="true">品质候选 · CityCenter 3BR</h3><p class="editable" contenteditable="true">Rama 9 / Asoke 方向，3室2卫，私享电梯，5–10分钟到 MRT，楼下有便利店、餐厅、商场和夜市。</p></div><div class="stay-bottom"><strong class="editable" contenteditable="true">¥ 11,584</strong><span class="editable" contenteditable="true">2/2–2/7 · 5晚</span></div></article>
+        </div>
+        <div class="table-wrap airbnb-table reveal" style="margin-top:18px">
+          <table class="data-table">
+            <thead><tr><th>Airbnb 候选</th><th>容量 / 评价</th><th>2/2–2/7 5晚价格</th><th>为什么适合 6大1小</th><th>区域判断</th></tr></thead>
+            <tbody>
+              <tr>
+                <td><div class="listing-cell"><img class="listing-img" loading="lazy" src="https://z1.muscache.cn/im/pictures/hosting/Hosting-1395726935526126187/original/985f8036-a05e-46e4-bd62-6e5baece216c.jpeg" alt="惠恭王 LuxuryCondo 3BR Airbnb 公寓示意图"><div><span class="listing-name editable" contenteditable="true">★ 首选 · Huai Khwang LuxuryCondo 3BR</span><a class="listing-link" href="https://www.airbnb.com/rooms/1395726935526126187?check_in=2027-02-02&amp;check_out=2027-02-07&amp;adults=6&amp;children=1" target="_blank" rel="noreferrer">打开 Airbnb 房源 ↗</a></div></div></td>
+                <td><span class="table-primary">整租 · 最大入住 11</span><span class="table-secondary">3室 / 4床 / 2卫 · 4.9 / 61条评价</span></td>
+                <td><span class="table-money">¥ 6,940</span><span class="table-secondary">约 ¥1,388 / 晚</span></td>
+                <td class="editable" contenteditable="true">2分钟到 MRT，楼下有 Tops、7‑11、餐厅和夜市；详情页显示电梯、厨房、高椅、泳池和免费接驳，最适合 1 岁半宝宝的日常补给与午休。</td>
+                <td class="editable" contenteditable="true">Huai Khwang / Rama 9</td>
+              </tr>
+              <tr>
+                <td><div class="listing-cell"><img class="listing-img" loading="lazy" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1484829683750205465/original/5ab67ee3-fea1-4c1c-8354-05ddfe57de22.jpeg" alt="Kawaii Villa Phrom Phong Airbnb 别墅示意图"><div><span class="listing-name editable" contenteditable="true">品质候选 · Kawaii Villa / Phrom Phong</span><a class="listing-link" href="https://www.airbnb.com/l/pa4BmM5Y" target="_blank" rel="noreferrer">打开用户分享房源 ↗</a></div></div></td>
+                <td><span class="table-primary">整租 · 公开最大入住 6</span><span class="table-secondary">3室3卫 · 4.98 / 52条评价</span></td>
+                <td><span class="table-money">¥ 11,843</span><span class="table-secondary">用户提供的 2/2–2/7 总价</span></td>
+                <td class="editable" contenteditable="true">Phrom Phong 核心生活圈，约7分钟到 BTS / EmQuartier / Emporium；日式设计、露台和 3 个卫生间很舒服，但两层无电梯，且需先确认 6大1小是否可入住。</td>
+                <td class="editable" contenteditable="true">Phrom Phong / Sukhumvit</td>
+              </tr>
+              <tr>
+                <td><div class="listing-cell"><img class="listing-img" loading="lazy" src="https://a0.muscache.com/im/pictures/hosting/Hosting-1584169624064222613/original/e2213cc6-28ee-4e09-8e0f-b432da0ee7f9.jpeg" alt="CityCenter 3BR Rama 9 Airbnb 公寓示意图"><div><span class="listing-name editable" contenteditable="true">品质候选 · CityCenter 3BR / Rama 9</span><a class="listing-link" href="https://www.airbnb.com/l/F8SX7mIC" target="_blank" rel="noreferrer">打开用户分享房源 ↗</a></div></div></td>
+                <td><span class="table-primary">整租 · 公开最大入住 6</span><span class="table-secondary">3室2卫 · 5.0 / 29条评价</span></td>
+                <td><span class="table-money">¥ 11,584</span><span class="table-secondary">用户提供的 2/2–2/7 总价</span></td>
+                <td class="editable" contenteditable="true">私享电梯、完整厨房、5–10分钟到 MRT；楼下有 7‑11、餐厅、商场、夜市和医院，对宝宝补给与推车更友好。需确认第7位儿童入住政策。</td>
+                <td class="editable" contenteditable="true">Rama 9 / Asoke 方向</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="source-note editable" contenteditable="true">住宿价格：A 惠恭王 ¥6,940；B Kawaii Villa ¥11,843；C CityCenter 3BR ¥11,584，均按用户提供或当前核验信息录入。B/C 公开最大入住人数显示为 6，预订前必须向房东确认 6大1小、婴儿床/高椅及楼梯或电梯条件。</p>
+        <div class="table-wrap stay-distance-table reveal" style="margin-top:18px">
+          <table class="data-table">
+            <thead><tr><th>住宿点</th><th>商场 / 补给</th><th>景点</th><th>公园</th><th>买菜 / 超市</th><th>点到点参考</th></tr></thead>
+            <tbody>
+              <tr><td><span class="table-primary">首选 · Huai Khwang LuxuryCondo</span><span class="table-secondary">Huai Khwang / Rama 9</span></td><td class="editable" contenteditable="true">Central Rama 9 约 2 分钟；The Street / Esplanade 约 5–10 分钟</td><td class="editable" contenteditable="true">Siam 约 20–25 分钟 MRT；河岸老城约 30–40 分钟车程</td><td class="editable" contenteditable="true">Benjakitti Park 约 20–25 分钟车程；附近有小型社区绿地</td><td class="editable" contenteditable="true">Tops 楼下；7‑11、夜市、Big C / Gourmet Market 约 5–15 分钟</td><td class="editable" contenteditable="true">MRT 约 2 分钟步行；机场约 25–40 分钟</td></tr>
+              <tr><td><span class="table-primary">品质候选 · Kawaii Villa</span><span class="table-secondary">Phrom Phong</span></td><td class="editable" contenteditable="true">EmQuartier / Emporium 约 7–10 分钟步行</td><td class="editable" contenteditable="true">Siam 约 15–20 分钟 BTS；Asok 约 10–15 分钟</td><td class="editable" contenteditable="true">Benjasiri Park 约 10–15 分钟步行 / 短车程</td><td class="editable" contenteditable="true">Gourmet Market EmQuartier；Villa Market 约 8–12 分钟</td><td class="editable" contenteditable="true">约 7 分钟到 BTS / 商场；两层无电梯</td></tr>
+              <tr><td><span class="table-primary">品质候选 · CityCenter 3BR</span><span class="table-secondary">Rama 9 / Asoke</span></td><td class="editable" contenteditable="true">Central Rama 9 约 5–10 分钟；Jodd Fairs 约 10 分钟</td><td class="editable" contenteditable="true">Siam 约 20–25 分钟 MRT；河岸约 30–40 分钟车程</td><td class="editable" contenteditable="true">Benjakitti Park 约 15–20 分钟车程</td><td class="editable" contenteditable="true">楼下 7‑11、超市；Central / Tops 约 5–10 分钟</td><td class="editable" contenteditable="true">MRT 约 5–10 分钟步行；私享电梯</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="stay-map map-layout">
+          <div class="map-panel reveal" aria-label="三套 Airbnb 住宿与周边设施示意图">
+            <svg viewBox="0 0 720 360" role="img" aria-label="三套住宿点与商场、公园、景点、超市的位置关系示意图">
+              <path class="map-water" d="M150 0 C190 70 145 115 182 176 C220 238 177 300 210 365"/>
+              <path class="map-land" d="M245 30 C340 18 558 28 650 95 L620 308 C520 350 320 340 247 280 C220 210 219 78 245 30Z"/>
+              <path class="map-road" d="M263 90 L604 108 M253 170 L617 190 M274 260 L592 270 M350 34 L350 325 M475 38 L460 330 M558 70 L540 314"/>
+              <path class="map-route" d="M342 134 C400 154 459 176 520 246 M342 134 C360 104 426 86 518 84 M342 134 C270 153 230 178 192 213"/>
+              <g class="stay-pin"><circle cx="342" cy="134" r="9"/><text x="356" y="138">A 惠恭王</text></g>
+              <g class="stay-pin"><circle cx="520" cy="246" r="9"/><text x="534" y="250">B Phrom Phong</text></g>
+              <g class="stay-pin"><circle cx="518" cy="84" r="9"/><text x="532" y="88">C Rama 9</text></g>
+              <circle class="facility-dot" cx="402" cy="60" r="7"/><text class="facility-text" x="414" y="64">Siam / 商场</text>
+              <circle class="facility-dot" cx="570" cy="290" r="7"/><text class="facility-text" x="582" y="294">Lumphini</text>
+              <circle class="facility-dot" cx="270" cy="228" r="7"/><text class="facility-text" x="282" y="232">河岸 / 老城</text>
+              <circle class="facility-dot" cx="560" cy="118" r="7"/><text class="facility-text" x="572" y="122">EmQuartier / 超市</text>
+              <text x="38" y="48" fill="#aebcaf" font-size="11" letter-spacing="2">FAMILY STAY MAP</text>
+              <text x="38" y="67" fill="#819286" font-size="10">A/B/C 对应下方距离表</text>
+            </svg>
+          </div>
+          <aside class="map-legend reveal"><div><div class="eyebrow">STAY DECISION</div><h3>怎么选</h3><p class="editable" contenteditable="true">A 是宝宝日常最方便的首选，B 的位置和品质最好但要确认楼梯，C 有私享电梯但要确认第7位入住政策。</p></div><div class="legend-item"><div class="legend-no">A</div><div><strong>Huai Khwang LuxuryCondo</strong><span>3室4床 / 电梯 / 高椅 / 泳池 / ¥6,940</span></div></div><div class="legend-item"><div class="legend-no">B</div><div><strong>Kawaii Villa</strong><span>3室3卫 / 4.98分 / Phrom Phong / ¥11,843</span></div></div><div class="legend-item"><div class="legend-no">C</div><div><strong>CityCenter 3BR</strong><span>3室2卫 / 5.0分 / 私享电梯 / ¥11,584</span></div></div></aside>
+        </div>
+        <div class="stay-route-grid">
+          <article class="route-card reveal"><div class="route-card-head"><div class="eyebrow">A / HUAI KHWANG</div><h3>先买菜，再去商场</h3><p class="editable" contenteditable="true">适合抵达日或休息日：楼下完成宝宝补给，傍晚去 Central Rama 9。</p></div><div class="mini-map"><svg viewBox="0 0 320 132" role="img" aria-label="惠恭王住宿到超市商场公园路线示意图"><path class="mini-road" d="M20 106 L298 20 M12 30 L286 116 M90 8 L224 126"/><path class="mini-route" d="M42 94 C100 72 150 72 202 42 C229 26 252 27 281 26"/><circle class="mini-dot" cx="42" cy="94" r="7"/><circle class="mini-facility" cx="150" cy="72" r="6"/><circle class="mini-facility" cx="281" cy="26" r="6"/><text x="23" y="119">住宿</text><text x="135" y="91">Tops / 7-11</text><text x="242" y="17">Central Rama 9</text></svg></div><table class="route-table"><tr><td>① 下楼补给</td><td><strong>Tops / 7‑11</strong>步行 2–5 分钟 · 水、奶、尿布、水果</td></tr><tr><td>② 采购主场</td><td><strong>Central Rama 9</strong>步行 / MRT 5–10 分钟 · Gourmet Market、药房</td></tr><tr><td>③ 轻松晚餐</td><td><strong>Jodd Fairs / 夜市</strong>车程 5–10 分钟 · 大人分组，小朋友先回房</td></tr></table></article>
+          <article class="route-card reveal"><div class="route-card-head"><div class="eyebrow">B / PHROM PHONG</div><h3>商场买菜 + 公园放电</h3><p class="editable" contenteditable="true">适合宝宝状态好的上午：先采购，再去 Benjasiri Park，下午回别墅午休。</p></div><div class="mini-map"><svg viewBox="0 0 320 132" role="img" aria-label="Phrom Phong 住宿到商场超市公园路线示意图"><path class="mini-road" d="M18 28 L296 108 M14 112 L294 26 M92 8 L232 126"/><path class="mini-route" d="M40 95 C92 85 138 66 170 42 C199 22 238 28 278 47"/><circle class="mini-dot" cx="40" cy="95" r="7"/><circle class="mini-facility" cx="170" cy="42" r="6"/><circle class="mini-facility" cx="278" cy="47" r="6"/><text x="20" y="119">别墅</text><text x="138" y="30">EmQuartier</text><text x="248" y="68">Benjasiri</text></svg></div><table class="route-table"><tr><td>① 买菜主场</td><td><strong>Gourmet Market / EmQuartier</strong>步行 7–10 分钟 · 水果、酸奶、面包、婴儿补给</td></tr><tr><td>② 宝宝放电</td><td><strong>Benjasiri Park</strong>步行 / 短车程 10–15 分钟 · 树荫和湖边</td></tr><tr><td>③ 回房午休</td><td><strong>Phrom Phong 住宿</strong>原路返回 · 预留 1.5–2 小时午休</td></tr></table></article>
+          <article class="route-card reveal"><div class="route-card-head"><div class="eyebrow">C / RAMA 9</div><h3>电梯房的雨天补给线</h3><p class="editable" contenteditable="true">适合下雨或宝宝需要休息的日子：商场、超市、药房都集中在一条线上。</p></div><div class="mini-map"><svg viewBox="0 0 320 132" role="img" aria-label="Rama 9 住宿到商场超市公园路线示意图"><path class="mini-road" d="M16 106 L298 20 M12 32 L292 112 M100 4 L226 128"/><path class="mini-route" d="M42 95 C92 90 120 62 176 60 C221 58 236 36 278 32"/><circle class="mini-dot" cx="42" cy="95" r="7"/><circle class="mini-facility" cx="176" cy="60" r="6"/><circle class="mini-facility" cx="278" cy="32" r="6"/><text x="23" y="119">住宿</text><text x="149" y="78">Central / Tops</text><text x="243" y="23">Jodd Fairs</text></svg></div><table class="route-table"><tr><td>① 楼下补给</td><td><strong>7‑11 / 便利店</strong>步行 2–5 分钟 · 临时奶、水和零食</td></tr><tr><td>② 一次买齐</td><td><strong>Central Rama 9</strong>步行 / MRT 5–10 分钟 · Tops、药房、婴儿用品</td></tr><tr><td>③ 晚上散步</td><td><strong>Jodd Fairs</strong>车程 10 分钟 · 大人轮流去，宝宝可留房休息</td></tr></table></article>
+        </div>
+        <div class="table-wrap reveal" style="margin-top:18px">
+          <table class="data-table">
+            <thead><tr><th>住宿</th><th>最适合遛娃的地方</th><th>雨天 / 空调备选</th><th>建议采购顺序</th><th>出行逻辑</th></tr></thead>
+            <tbody>
+              <tr><td><span class="table-primary">A / Huai Khwang</span></td><td class="editable" contenteditable="true">Central Rama 9 儿童区、Benjakitti Park、The Street Ratchada</td><td class="editable" contenteditable="true">Central Rama 9、The Street、商场内餐厅</td><td class="editable" contenteditable="true">楼下 Tops / 7‑11 → Central Gourmet Market → 药房 / 尿布</td><td class="editable" contenteditable="true">适合把半天都放在 Rama 9，减少带宝宝跨区</td></tr>
+              <tr><td><span class="table-primary">B / Phrom Phong</span></td><td class="editable" contenteditable="true">Benjasiri Park、EmQuartier 室内亲子空间</td><td class="editable" contenteditable="true">EmQuartier、Emporium、Terminal 21</td><td class="editable" contenteditable="true">Gourmet Market → Villa Market → 商场药房</td><td class="editable" contenteditable="true">适合上午商场 + 公园，下午回别墅午休</td></tr>
+              <tr><td><span class="table-primary">C / Rama 9</span></td><td class="editable" contenteditable="true">Benjakitti Park、Central Rama 9 室内活动</td><td class="editable" contenteditable="true">Central Rama 9、Jodd Fairs 周边商场</td><td class="editable" contenteditable="true">楼下 7‑11 → Central Tops → 医院 / 药房补给</td><td class="editable" contenteditable="true">适合雨天和需要随时回房的宝宝节奏</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-wrap reveal" style="margin-top:18px">
+          <table class="data-table">
+            <thead><tr><th>住宿</th><th>附近遛娃 / 景点</th><th>餐厅建议</th><th>建议时长</th><th>适合当天怎么排</th></tr></thead>
+            <tbody>
+              <tr><td><span class="table-primary">A / Huai Khwang</span></td><td class="editable" contenteditable="true">Central Rama 9 儿童区；The Street；Benjakitti Park；Rama 9 夜市</td><td class="editable" contenteditable="true">Central Rama 9 内家庭餐厅；The Street 餐饮层；夜市先买清淡熟食</td><td class="editable" contenteditable="true">2–4 小时</td><td class="editable" contenteditable="true">上午买菜 → 商场空调遛娃 → 回房午睡 → 傍晚夜市或附近晚餐</td></tr>
+              <tr><td><span class="table-primary">B / Phrom Phong</span></td><td class="editable" contenteditable="true">Benjasiri Park；EmQuartier / Emporium；Asok Terminal 21</td><td class="editable" contenteditable="true">EmQuartier 家庭餐厅；Nara Thai Cuisine；Phrom Phong 日式餐厅</td><td class="editable" contenteditable="true">3–5 小时</td><td class="editable" contenteditable="true">Gourmet Market 买菜 → Benjasiri 绿地 → 商场午餐 → 回房午睡</td></tr>
+              <tr><td><span class="table-primary">C / Rama 9</span></td><td class="editable" contenteditable="true">Central Rama 9；Benjakitti Park；Jodd Fairs；MRT 沿线儿童友好商场</td><td class="editable" contenteditable="true">Central Rama 9 餐厅层；Rama 9 本地泰菜；Jodd Fairs 大人分组吃</td><td class="editable" contenteditable="true">2–4 小时</td><td class="editable" contenteditable="true">雨天商场线最稳；天气好时下午再去 Benjakitti Park</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="move">
+      <div class="shell">
+        <div class="section-head reveal"><div><div class="index">05 / getting around</div><h2 class="section-title">移动要有余裕，<br>每一站都不赶。</h2></div><p class="section-intro editable" contenteditable="true">7 个人的曼谷移动，建议“机场接送 + 重点日包车 + 其余短途打车”的组合，减少换乘和等待。</p></div>
+        <div class="move-grid stagger reveal">
+          <article class="move-card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 15.5h16M6 15.5l1-6h10l1 6M8 18.5h.01M16 18.5h.01" stroke-width="1.3"/></svg><h3 class="editable" contenteditable="true">7座自驾租车</h3><p class="editable" contenteditable="true">按携程看到的 ¥500/天估算，适合机场取车和跨区移动。预订时确认国际驾照、儿童座椅、保险和停车费。</p><span class="move-cost editable" contenteditable="true">¥ 500 / 天</span></article>
+          <article class="move-card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 18V6h12v12M9 9h6M9 13h6M9 17h3" stroke-width="1.3"/></svg><h3 class="editable" contenteditable="true">BTS / MRT</h3><p class="editable" contenteditable="true">两三人分组时很方便，避开堵车。带小朋友与推车时，先看出口是否有电梯。</p><span class="move-cost editable" contenteditable="true">¥ 20–50 / 人·次</span></article>
+          <article class="move-card"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M4 16h16M6 16l2-8h8l2 8M8 19h.01M16 19h.01" stroke-width="1.3"/></svg><h3 class="editable" contenteditable="true">Grab / Taxi</h3><p class="editable" contenteditable="true">临时分流与晚餐返程的轻量选项。建议预留两台车，避免让全家在路边等车。</p><span class="move-cost editable" contenteditable="true">¥ 50–180 / 单程</span></article>
+        </div>
+        <div class="table-wrap reveal" style="margin-top:18px">
+          <table class="data-table">
+            <thead><tr><th>方式</th><th>适合什么时候</th><th>费用参考</th><th>父母需要知道</th></tr></thead>
+            <tbody>
+              <tr><td><span class="table-primary">7 座包车</span></td><td class="editable" contenteditable="true">机场接送、跨区域移动、长辈同行</td><td><span class="table-money editable" contenteditable="true">¥ 1,200–1,800 / 天</span></td><td class="editable" contenteditable="true">舒适、省换乘；要提前确认儿童座椅</td></tr>
+              <tr><td><span class="table-primary">BTS / MRT</span></td><td class="editable" contenteditable="true">2–3 人分组、避开高峰堵车</td><td><span class="table-money editable" contenteditable="true">¥ 20–50 / 人·次</span></td><td class="editable" contenteditable="true">带推车先确认电梯出口</td></tr>
+              <tr><td><span class="table-primary">Grab / Taxi</span></td><td class="editable" contenteditable="true">短途、晚餐返程、临时分流</td><td><span class="table-money editable" contenteditable="true">¥ 50–180 / 单程</span></td><td class="editable" contenteditable="true">建议分成两台车，减少等待</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="table-wrap reveal" style="margin-top:18px">
+          <table class="data-table">
+            <thead><tr><th>起点 → 终点</th><th>推荐方式</th><th>预计耗时</th><th>费用参考</th><th>家庭执行备注</th></tr></thead>
+            <tbody>
+              <tr><td><span class="table-primary editable" contenteditable="true">BKK 机场 → 住宿</span></td><td class="editable" contenteditable="true">7 座接送车</td><td class="editable" contenteditable="true">35–60 分钟</td><td><span class="table-money editable" contenteditable="true">฿650–1,000</span></td><td class="editable" contenteditable="true">落地后直接去住处；儿童座椅提前装好</td></tr>
+              <tr><td><span class="table-primary editable" contenteditable="true">Hua Lamphong → 河岸老城</span></td><td class="editable" contenteditable="true">Grab + 短程步行 / 渡船</td><td class="editable" contenteditable="true">20–35 分钟</td><td><span class="table-money editable" contenteditable="true">฿180–350</span></td><td class="editable" contenteditable="true">上午出发，避开午后高温；老人小孩分两车更松</td></tr>
+              <tr><td><span class="table-primary editable" contenteditable="true">Sukhumvit → Lumphini</span></td><td class="editable" contenteditable="true">Grab / MRT</td><td class="editable" contenteditable="true">15–25 分钟</td><td><span class="table-money editable" contenteditable="true">฿120–250</span></td><td class="editable" contenteditable="true">傍晚入园；回程直接在 Silom / Sathorn 用餐</td></tr>
+              <tr><td><span class="table-primary editable" contenteditable="true">任一住宿 → Or Tor Kor</span></td><td class="editable" contenteditable="true">包车最省力</td><td class="editable" contenteditable="true">30–50 分钟</td><td><span class="table-money editable" contenteditable="true">฿500–900</span></td><td class="editable" contenteditable="true">建议上午一次买完水果、蔬菜和熟食</td></tr>
+              <tr><td><span class="table-primary editable" contenteditable="true">住宿 → Siam / CentralWorld</span></td><td class="editable" contenteditable="true">BTS / Grab</td><td class="editable" contenteditable="true">15–30 分钟</td><td><span class="table-money editable" contenteditable="true">฿100–280</span></td><td class="editable" contenteditable="true">雨天、补给、空调休息都安排在这里</td></tr>
+              <tr><td><span class="table-primary editable" contenteditable="true">住宿 → BKK 机场</span></td><td class="editable" contenteditable="true">7 座送机</td><td class="editable" contenteditable="true">40–70 分钟</td><td><span class="table-money editable" contenteditable="true">฿700–1,100</span></td><td class="editable" contenteditable="true">10:35 起飞，建议 06:45–07:00 从市区出发</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="parent-note editable" contenteditable="true">耗时按常规交通估算，曼谷高峰期可能增加 20–40 分钟；7 人出行优先把跨区移动集中到包车日。</p>
+      </div>
+    </section>
+
+    <section class="section soft" id="map">
+      <div class="shell">
+        <div class="section-head reveal"><div><div class="index">06 / area map</div><h2 class="section-title">先看懂曼谷，<br>再决定去哪。</h2></div><p class="section-intro editable" contenteditable="true">这是一张适合家庭做决策的区域图，不追求导航级精度，先用它判断景点、餐厅和买菜点之间的关系。</p></div>
+        <div class="map-layout">
+          <div class="map-panel reveal" aria-label="曼谷家庭旅行区域示意图">
+            <svg viewBox="0 0 720 430" role="img" aria-label="曼谷河岸、老城、Siam、Lumphini、Chatuchak 与素万那普机场示意图">
+              <path class="map-water" d="M166 0 C210 70 148 115 188 170 C235 233 188 280 216 340 C240 386 223 414 252 440"/>
+              <path class="map-land" d="M255 42 C344 16 548 38 640 124 L608 318 C545 382 350 396 264 332 C227 275 226 99 255 42Z"/>
+              <path class="map-road" d="M272 104 L565 108 M262 178 L606 196 M286 258 L572 266 M347 47 L340 344 M455 50 L440 360 M550 85 L530 328"/>
+              <path class="map-route" d="M512 333 C470 295 496 256 437 229 C385 205 362 163 303 143 C270 132 232 94 197 63"/>
+              <g class="map-marker" tabindex="0" role="button" data-target="riverside"><circle cx="303" cy="143" r="8"/><text x="318" y="147">河岸 / 老城</text></g>
+              <g class="map-marker" tabindex="0" role="button" data-target="siam"><circle cx="437" cy="229" r="8"/><text x="452" y="233">Siam</text></g>
+              <g class="map-marker" tabindex="0" role="button" data-target="lumphini"><circle cx="512" cy="333" r="8"/><text x="527" y="337">Lumphini</text></g>
+              <g class="map-marker" tabindex="0" role="button" data-target="market"><circle cx="548" cy="92" r="8"/><text x="563" y="96">Chatuchak / 买菜</text></g>
+              <g class="map-marker" tabindex="0" role="button" data-target="airport"><circle cx="650" cy="345" r="8"/><text x="640" y="369" text-anchor="end">BKK 机场</text></g>
+              <text x="44" y="56" fill="#aebcaf" font-size="11" letter-spacing="2">CHAO PHRAYA RIVER</text>
+              <text x="385" y="80" fill="#819286" font-size="10" letter-spacing="2">BANGKOK FAMILY MAP</text>
+            </svg>
+          </div>
+          <aside class="map-legend reveal">
+            <div><div class="eyebrow">READ THE MAP</div><h3>四个决策点</h3><p class="editable" contenteditable="true">用“住在哪里 + 哪天包车 + 哪里买菜”来决定路线，父母和宝宝都会轻松很多。</p></div>
+            <div class="legend-item" id="riverside"><div class="legend-no">01</div><div><strong class="editable" contenteditable="true">河岸 / 老城</strong><span class="editable" contenteditable="true">寺庙、河风、景观餐厅；适合半日慢慢走。</span></div></div>
+            <div class="legend-item" id="siam"><div class="legend-no">02</div><div><strong class="editable" contenteditable="true">Siam</strong><span class="editable" contenteditable="true">商场、室内活动、餐厅密集，雨天和补给日很稳。</span></div></div>
+            <div class="legend-item" id="lumphini"><div class="legend-no">03</div><div><strong class="editable" contenteditable="true">Lumphini</strong><span class="editable" contenteditable="true">公园散步 + 傍晚吃饭；给小朋友放电。</span></div></div>
+            <div class="legend-item" id="market"><div class="legend-no">04</div><div><strong class="editable" contenteditable="true">Or Tor Kor / Chatuchak</strong><span class="editable" contenteditable="true">买水果、蔬菜、熟食和宝宝补给；建议上午前往。</span></div></div>
+          </aside>
+        </div>
+        <p class="parent-note editable" contenteditable="true">地图为家庭规划示意图，实际路程受交通影响；如果当天跨区，优先使用包车或把目的地合并在同一区域。</p>
+      </div>
+    </section>
+
+    <section class="section dark" id="places">
+      <div class="shell">
+        <div class="section-head reveal"><div><div class="index">07 / nearby ideas</div><h2 class="section-title">把附近的好，<br>慢慢收进来。</h2></div><p class="section-intro editable" contenteditable="true">这里不安排“每天必须去哪里”，只留一张目的地灵感卡：根据当天体力、天气与心情自由组合。</p></div>
+        <div class="place-grid stagger reveal">
+          <article class="place-card"><div class="place-type">MARKET / 菜市场</div><h3 class="editable" contenteditable="true">Or Tor Kor</h3><p class="editable" contenteditable="true">更适合全家一起逛的市场样本：水果、熟食、香料和可以边走边看的热闹。</p><div class="place-foot"><span>Chatuchak 附近</span><span>建议上午</span></div></article>
+          <article class="place-card"><div class="place-type">PARK / 公园</div><h3 class="editable" contenteditable="true">Lumphini</h3><p class="editable" contenteditable="true">给小朋友放电、给大人散步的一小时。树荫、湖面与城市天际线都很松弛。</p><div class="place-foot"><span>市中心南侧</span><span>建议傍晚</span></div></article>
+          <article class="place-card"><div class="place-type">CITY / 景点</div><h3 class="editable" contenteditable="true">河岸 & 老城</h3><p class="editable" contenteditable="true">把寺庙、河风和晚餐放在同一张画面里。节奏可以很慢，重点是留出休息点。</p><div class="place-foot"><span>Bangkok Riverside</span><span>半日灵感</span></div></article>
+        </div>
+        <div class="table-wrap reveal" style="margin-top:18px">
+          <table class="data-table">
+            <thead><tr><th>类型</th><th>目的地</th><th>适合全家的原因</th><th>建议时段</th><th>费用预留</th></tr></thead>
+            <tbody>
+              <tr><td><span class="table-primary">菜市场</span></td><td class="editable" contenteditable="true">Or Tor Kor Market</td><td class="editable" contenteditable="true">环境整洁，水果、熟食多，边逛边吃</td><td class="editable" contenteditable="true">上午</td><td class="table-money editable" contenteditable="true">¥ 100–300</td></tr>
+              <tr><td><span class="table-primary">公园</span></td><td class="editable" contenteditable="true">Lumphini Park</td><td class="editable" contenteditable="true">树荫足、可散步，给小朋友放电</td><td class="editable" contenteditable="true">傍晚</td><td class="table-money editable" contenteditable="true">¥ 0–100</td></tr>
+              <tr><td><span class="table-primary">景点</span></td><td class="editable" contenteditable="true">河岸 & 老城</td><td class="editable" contenteditable="true">寺庙、河风、晚餐可以放在同一片区域</td><td class="editable" contenteditable="true">半日</td><td class="table-money editable" contenteditable="true">¥ 200–500</td></tr>
+              <tr><td><span class="table-primary">备选</span></td><td class="editable" contenteditable="true">待补充：雨天室内活动</td><td class="editable" contenteditable="true">下雨或家人需要休息时使用</td><td class="editable" contenteditable="true">机动</td><td class="table-money editable" contenteditable="true">¥ —</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="photo-grid stagger reveal">
+          <article class="photo-card" id="riverside-photo"><svg class="photo-illustration" viewBox="0 0 720 320" role="img" aria-label="曼谷河岸老城与郑王庙示意图"><defs><linearGradient id="riverSky" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#334d55"/><stop offset=".58" stop-color="#c58d62"/><stop offset="1" stop-color="#25342c"/></linearGradient></defs><rect width="720" height="320" fill="url(#riverSky)"/><circle cx="560" cy="76" r="42" fill="#f4d9a5" opacity=".8"/><path d="M0 244 Q160 214 310 246 T720 228 V320H0Z" fill="#27434b"/><path d="M340 247 386 86 431 247Z" fill="#e9d6aa"/><path d="m386 86 16 54h-32zM354 154h64M345 192h82" stroke="#7b5d45" stroke-width="8"/><path d="M95 271h195l-20 20H116z" fill="#d89d67"/><circle cx="220" cy="258" r="6" fill="#f6dfad"/><text x="28" y="38" fill="#fff6df" font-size="18" font-weight="700">RIVERSIDE / 河岸老城</text></svg><div class="photo-card-body"><div class="eyebrow">RIVERSIDE / 河岸老城</div><h3 class="editable" contenteditable="true">Wat Arun + 河边晚餐</h3><p class="editable" contenteditable="true">建议把寺庙、渡船和晚餐放成一组。餐厅可优先看 The Deck 或 Baan Tha Tien，提前确认大桌与儿童座椅。</p><div class="photo-meta"><span>适合：半日</span><span>餐厅：景观 / 泰菜</span></div></div></article>
+          <article class="photo-card" id="siam-photo"><svg class="photo-illustration" viewBox="0 0 720 320" role="img" aria-label="Siam 市中心商场和家庭餐示意图"><defs><linearGradient id="siamSky" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#142e3d"/><stop offset="1" stop-color="#d4a571"/></linearGradient></defs><rect width="720" height="320" fill="url(#siamSky)"/><path d="M0 260h720v60H0z" fill="#222d30"/><path d="M132 260V104h456v156z" fill="#a8b3b1"/><path d="M174 130h372v28H174z" fill="#e2bd70"/><path d="M174 184h372M174 228h372" stroke="#55646a" stroke-width="8"/><g fill="#d8f2f0"><rect x="196" y="167" width="42" height="25"/><rect x="260" y="167" width="42" height="25"/><rect x="324" y="167" width="42" height="25"/><rect x="388" y="167" width="42" height="25"/><rect x="452" y="167" width="42" height="25"/></g><circle cx="615" cy="60" r="32" fill="#f4d6a0" opacity=".75"/><text x="28" y="38" fill="#fff6df" font-size="18" font-weight="700">SIAM / 市中心</text></svg><div class="photo-card-body"><div class="eyebrow">SIAM / 市中心</div><h3 class="editable" contenteditable="true">商场避暑 + 家庭餐</h3><p class="editable" contenteditable="true">CentralWorld、Siam Paragon 一带适合雨天和中途休息。餐厅可看 Nara Thai Cuisine 或商场内家庭餐厅，空调与洗手间更稳定。</p><div class="photo-meta"><span>适合：雨天 / 晚餐</span><span>餐厅：泰菜 / 海鲜</span></div></div></article>
+          <article class="photo-card" id="lumphini-photo"><svg class="photo-illustration" viewBox="0 0 720 320" role="img" aria-label="Lumphini 公园湖面和城市天际线示意图"><defs><linearGradient id="parkSky" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#b2c79c"/><stop offset=".62" stop-color="#5e927d"/><stop offset="1" stop-color="#203f36"/></linearGradient></defs><rect width="720" height="320" fill="url(#parkSky)"/><path d="M0 246Q180 218 360 246T720 236V320H0Z" fill="#406f5e"/><path d="M0 276Q160 246 330 275T720 266V320H0Z" fill="#2d5a55"/><g fill="#24463c"><path d="M80 258 100 106l20 152zM40 258 62 142l18 116zM610 254 632 88l20 166zM670 254 688 132l18 122z"/></g><g fill="#b9d8d0"><rect x="278" y="153" width="48" height="93"/><rect x="338" y="118" width="56" height="128"/><rect x="414" y="142" width="41" height="104"/></g><circle cx="547" cy="70" r="36" fill="#f9e0ac" opacity=".8"/><text x="28" y="38" fill="#fff6df" font-size="18" font-weight="700">LUMPHINI / 公园</text></svg><div class="photo-card-body"><div class="eyebrow">LUMPHINI / 公园</div><h3 class="editable" contenteditable="true">树荫、湖面与傍晚</h3><p class="editable" contenteditable="true">公园散步后可在 Silom / Sathorn 一带吃饭。建议优先选择可预约、有空调、能安排大桌的餐厅。</p><div class="photo-meta"><span>适合：傍晚 1 小时</span><span>餐厅：Silom / Sathorn</span></div></div></article>
+        </div>
+        <p class="parent-note editable" contenteditable="true">图片为页面中的旅行氛围示意图，可直接替换为你们实际拍摄的照片；餐厅名称先作为候选位，出发前再核对营业时间和预约规则。</p>
+        <div class="table-wrap reveal" style="margin-top:18px">
+          <table class="data-table">
+            <thead><tr><th>目的地附近</th><th>餐厅候选</th><th>步行 / 车程</th><th>人均预算</th><th>适合全家的点</th></tr></thead>
+            <tbody>
+              <tr><td><span class="table-primary editable" contenteditable="true">Wat Arun / Tha Tien</span></td><td><span class="table-primary editable" contenteditable="true">The Deck / Baan Tha Tien</span></td><td class="editable" contenteditable="true">景点后步行 5–12 分钟</td><td><span class="table-money editable" contenteditable="true">฿500–1,200</span></td><td class="editable" contenteditable="true">河景、泰菜、适合坐下来；建议提前预约大桌</td></tr>
+              <tr><td><span class="table-primary editable" contenteditable="true">Chinatown / Song Wat</span></td><td><span class="table-primary editable" contenteditable="true">T&K Seafood / Nai Ek Roll Noodles</span></td><td class="editable" contenteditable="true">步行 5–15 分钟</td><td><span class="table-money editable" contenteditable="true">฿250–600</span></td><td class="editable" contenteditable="true">接地气、选择多；小朋友可先点面、饭和水果</td></tr>
+              <tr><td><span class="table-primary editable" contenteditable="true">Lumphini / Silom</span></td><td><span class="table-primary editable" contenteditable="true">Baan Khanitha / Silom 家庭餐厅</span></td><td class="editable" contenteditable="true">打车 8–15 分钟</td><td><span class="table-money editable" contenteditable="true">฿500–1,000</span></td><td class="editable" contenteditable="true">空调、座位舒适；适合公园后慢慢吃晚餐</td></tr>
+              <tr><td><span class="table-primary editable" contenteditable="true">Siam / CentralWorld</span></td><td><span class="table-primary editable" contenteditable="true">Nara Thai Cuisine / 商场家庭餐厅</span></td><td class="editable" contenteditable="true">商场内 5–15 分钟</td><td><span class="table-money editable" contenteditable="true">฿400–900</span></td><td class="editable" contenteditable="true">洗手间、空调、婴儿椅和雨天备选最稳</td></tr>
+              <tr><td><span class="table-primary editable" contenteditable="true">Or Tor Kor / Chatuchak</span></td><td><span class="table-primary editable" contenteditable="true">Or Tor Kor Food Court</span></td><td class="editable" contenteditable="true">市场内</td><td><span class="table-money editable" contenteditable="true">฿150–350</span></td><td class="editable" contenteditable="true">买菜后直接吃；可以先买水果和清淡熟食</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="parent-note editable" contenteditable="true">餐厅是候选清单，正式出发前请核对当日营业、是否接受 7 人预约、儿童椅和辣度要求。</p>
+        <div class="market-grid">
+          <article class="market-feature reveal"><svg class="photo-illustration" viewBox="0 0 720 320" role="img" aria-label="宝宝买菜与商场超市补给示意图"><defs><linearGradient id="marketBg" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#d8bd7e"/><stop offset="1" stop-color="#7c9a74"/></linearGradient></defs><rect width="720" height="320" fill="url(#marketBg)"/><path d="M0 84h720" stroke="#f5e2b5" stroke-width="36"/><path d="M0 84 90 37l90 47 90-47 90 47 90-47 90 47 90-47 90 47" fill="none" stroke="#754e38" stroke-width="10"/><g fill="#d96f4d"><circle cx="180" cy="180" r="34"/><circle cx="250" cy="190" r="30"/><circle cx="330" cy="174" r="31"/></g><g fill="#78a66c"><ellipse cx="434" cy="204" rx="40" ry="24"/><ellipse cx="520" cy="188" rx="38" ry="24"/><ellipse cx="594" cy="207" rx="43" ry="26"/></g><path d="M144 261h458l-28 42H172z" fill="#8e5d3d"/><text x="28" y="38" fill="#fff6df" font-size="18" font-weight="700">BABY FOOD RUN / 宝宝买菜</text></svg><div class="market-feature-body"><div class="eyebrow">BABY FOOD RUN / 宝宝买菜</div><h3 class="editable" contenteditable="true">买菜点，单独安排。</h3><p class="editable" contenteditable="true">宝宝需要的水果、蔬菜、酸奶、面包和简单熟食，建议在到达后的前半天一次买齐。大人去市场时，另留一位照看宝宝。</p></div></article>
+          <div class="table-wrap market-table reveal">
+            <table class="data-table">
+              <thead><tr><th>买菜点</th><th>适合买什么</th><th>距离 / 方式</th><th>给宝宝的建议</th></tr></thead>
+              <tbody>
+                <tr><td><span class="table-primary editable" contenteditable="true">Or Tor Kor Market</span></td><td class="editable" contenteditable="true">新鲜水果、蔬菜、熟食、椰子水</td><td class="editable" contenteditable="true">Chatuchak 附近；建议包车</td><td class="editable" contenteditable="true">环境相对整洁，先买可即食水果</td></tr>
+                <tr><td><span class="table-primary editable" contenteditable="true">Khlong Toei Market</span></td><td class="editable" contenteditable="true">本地蔬菜、肉类、香料、米面</td><td class="editable" contenteditable="true">市中心南侧；建议白天去</td><td class="editable" contenteditable="true">更生活化，宝宝同行时注意卫生与拥挤</td></tr>
+                <tr><td><span class="table-primary editable" contenteditable="true">Gourmet Market / Tops</span></td><td class="editable" contenteditable="true">酸奶、面包、奶酪、婴儿零食、矿泉水</td><td class="editable" contenteditable="true">Siam / 商场内；步行方便</td><td class="editable" contenteditable="true">适合补给日，包装食品更容易看成分</td></tr>
+                <tr><td><span class="table-primary editable" contenteditable="true">Big C</span></td><td class="editable" contenteditable="true">纸巾、尿布、饮料、基础日用品</td><td class="editable" contenteditable="true">CentralWorld 对面；顺路采购</td><td class="editable" contenteditable="true">适合一次性补齐大件和消耗品</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p class="parent-note editable" contenteditable="true">宝宝买菜清单：香蕉 / 小番茄 / 牛油果 / 酸奶 / 面包 / 矿泉水 / 湿巾 / 常用药。具体品牌和年龄适配请按宝宝平时习惯替换。</p>
+      </div>
+    </section>
+
+    <section class="section" id="muay">
+      <div class="shell">
+        <div class="section-head reveal"><div><div class="index">08 / muay thai</div><h2 class="section-title">泰拳可以看，<br>但要等赛程放票。</h2></div><p class="section-intro editable" contenteditable="true">2/2–2/7 是有常态赛事窗口的日期段。2027 年具体对阵和票价尚未全部开放，先把最可能的场次、购票场馆和交通排好。</p></div>
+        <div class="muay-card">
+          <article class="muay-feature reveal"><span class="muay-badge">可执行建议 / BUY WHEN OPEN</span><h3 class="editable" contenteditable="true">优先选周五或周六。</h3><p class="editable" contenteditable="true">如果全家只看一场，建议优先 Lumpinee 的周五 ONE Friday Fights 或 Rajadamnern 的周六 RWS。通常 19:00 左右开场，带 1 岁半宝宝建议只看前半场，提前安排回程车。</p><p style="margin-top:18px"><a class="listing-link" href="https://rajadamnern.com/" target="_blank" rel="noreferrer">Rajadamnern 官方 ↗</a>　<a class="listing-link" href="https://www.lumpinee.com/" target="_blank" rel="noreferrer">Lumpinee 官方 ↗</a></p></article>
+          <div class="table-wrap muay-table reveal">
+            <table class="data-table">
+              <thead><tr><th>日期</th><th>场馆 / 常态赛事</th><th>购票建议</th><th>适合程度</th></tr></thead>
+              <tbody>
+                <tr><td><span class="table-primary">2/2 周二</span></td><td class="editable" contenteditable="true">暂无固定大型场次；可作为抵达和休息日</td><td class="editable" contenteditable="true">不建议提前买票</td><td><span class="table-status pending">留白日</span></td></tr>
+                <tr><td><span class="table-primary">2/3 周三</span></td><td class="editable" contenteditable="true">Rajadamnern Stadium 常态周中赛事</td><td class="editable" contenteditable="true">官方票页开放后确认具体对阵与座位</td><td><span class="table-status">可选</span></td></tr>
+                <tr><td><span class="table-primary">2/4 周四</span></td><td class="editable" contenteditable="true">Rajadamnern Stadium 常态赛事窗口</td><td class="editable" contenteditable="true">适合想避开周末人流的一场</td><td><span class="table-status">可选</span></td></tr>
+                <tr><td><span class="table-primary">2/5 周五</span></td><td class="editable" contenteditable="true">Lumpinee Stadium · ONE Friday Fights 常态档期</td><td class="editable" contenteditable="true">优先关注官方 / ThaiTicketMajor 放票</td><td><span class="table-status">首选</span></td></tr>
+                <tr><td><span class="table-primary">2/6 周六</span></td><td class="editable" contenteditable="true">Rajadamnern · RWS 常态周六窗口</td><td class="editable" contenteditable="true">适合全家看一场，但建议只安排前半场</td><td><span class="table-status">首选</span></td></tr>
+                <tr><td><span class="table-primary">2/7 周日</span></td><td class="editable" contenteditable="true">Rajadamnern 周日常态赛事窗口</td><td class="editable" contenteditable="true">返程日不建议安排，除非只看下午场</td><td><span class="table-status pending">不建议</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <p class="muay-note editable" contenteditable="true">赛程说明：上述为场馆常态档期，不代表 2027 年具体对阵已经公布。正式购买前要核对日期、开场时间、票价、儿童入场规则和是否允许中途离场。</p>
+        <div class="table-wrap reveal" style="margin-top:18px">
+          <table class="data-table">
+            <thead><tr><th>住宿 → 场馆</th><th>推荐交通</th><th>耗时</th><th>费用参考</th><th>执行备注</th></tr></thead>
+            <tbody>
+              <tr><td><span class="table-primary">Huai Khwang → Rajadamnern</span></td><td class="editable" contenteditable="true">Grab / 7座车</td><td class="editable" contenteditable="true">20–30 分钟</td><td><span class="table-money editable" contenteditable="true">฿180–350</span></td><td class="editable" contenteditable="true">建议 17:45 出发；回程提前叫车，避开散场拥堵</td></tr>
+              <tr><td><span class="table-primary">Huai Khwang → Lumpinee</span></td><td class="editable" contenteditable="true">MRT + Grab / 7座车</td><td class="editable" contenteditable="true">15–25 分钟</td><td><span class="table-money editable" contenteditable="true">฿160–320</span></td><td class="editable" contenteditable="true">带宝宝优先直达，减少换乘和楼梯</td></tr>
+              <tr><td><span class="table-primary">Phrom Phong → Rajadamnern</span></td><td class="editable" contenteditable="true">Grab / 7座车</td><td class="editable" contenteditable="true">25–35 分钟</td><td><span class="table-money editable" contenteditable="true">฿220–420</span></td><td class="editable" contenteditable="true">晚高峰可能更久，建议提前 20 分钟出发</td></tr>
+              <tr><td><span class="table-primary">Phrom Phong → Lumpinee</span></td><td class="editable" contenteditable="true">BTS + MRT / Grab</td><td class="editable" contenteditable="true">15–25 分钟</td><td><span class="table-money editable" contenteditable="true">฿160–330</span></td><td class="editable" contenteditable="true">Lumpinee 对宝宝更方便的关键是直达回房</td></tr>
+              <tr><td><span class="table-primary">Rama 9 → Rajadamnern</span></td><td class="editable" contenteditable="true">Grab / 7座车</td><td class="editable" contenteditable="true">25–35 分钟</td><td><span class="table-money editable" contenteditable="true">฿220–420</span></td><td class="editable" contenteditable="true">可先在 Central Rama 9 吃饭再出发</td></tr>
+              <tr><td><span class="table-primary">Rama 9 → Lumpinee</span></td><td class="editable" contenteditable="true">MRT + Grab / 7座车</td><td class="editable" contenteditable="true">15–25 分钟</td><td><span class="table-money editable" contenteditable="true">฿160–330</span></td><td class="editable" contenteditable="true">私享电梯房回程更轻松，适合宝宝中途回房</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="food">
+      <div class="shell">
+        <div class="section-head reveal"><div><div class="index">09 / food notes</div><h2 class="section-title">吃得好，<br>旅程就稳了一半。</h2></div><p class="section-intro editable" contenteditable="true">先准备“家庭友好”的主线，再穿插一两顿想吃很久的特色餐。口味、空调、洗手间和等位时间都算进体验。</p></div>
+        <div class="food-layout">
+          <article class="food-feature reveal"><div class="eyebrow">A SMALL RULE</div><h3 class="editable" contenteditable="true">一顿认真吃，<br>一顿随便吃。</h3><p class="editable" contenteditable="true">正餐留给一家人一起坐下来吃，另一顿就近解决。这样既有记忆点，也不会让每天都像在完成任务。</p></article>
+          <div class="food-stack stagger reveal"><article class="food-note"><div class="eyebrow">01 / 照顾小朋友</div><h4 class="editable" contenteditable="true">先点熟悉的，再试新的</h4><p class="editable" contenteditable="true">米饭、面条、水果、汤类作为安全垫；辣度与过敏原提前和餐厅沟通。</p></article><article class="food-note"><div class="eyebrow">02 / 给长辈留余地</div><h4 class="editable" contenteditable="true">空调、座位、洗手间</h4><p class="editable" contenteditable="true">大桌、少排队、步行距离短，通常比网红程度更值得优先。</p></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="checklist">
+      <div class="shell">
+        <div class="section-head reveal"><div><div class="index">10 / checklist</div><h2 class="section-title">最后，把未知<br>变成待办。</h2></div><p class="section-intro editable" contenteditable="true">你找好酒店之后，从这里继续往里填。完成一项就打一个勾，整份攻略会越来越像你们自己的旅行。</p></div>
+        <div class="checklist">
+          <div class="check-column reveal"><h3>需要确认</h3><label class="check"><input type="checkbox"><span class="editable" contenteditable="true">锁定往返航班与行李额度</span></label><label class="check"><input type="checkbox"><span class="editable" contenteditable="true">确定酒店区域、房型与连通房</span></label><label class="check"><input type="checkbox"><span class="editable" contenteditable="true">确认 7 座车辆与儿童座椅</span></label><label class="check"><input type="checkbox"><span class="editable" contenteditable="true">购买保险并登记紧急联系人</span></label></div>
+          <div class="check-column reveal"><h3>出发前一周</h3><label class="check"><input type="checkbox"><span class="editable" contenteditable="true">下载离线地图、翻译与打车 App</span></label><label class="check"><input type="checkbox"><span class="editable" contenteditable="true">整理药品、薄外套与防晒</span></label><label class="check"><input type="checkbox"><span class="editable" contenteditable="true">把这份页面发给全家人</span></label><label class="check"><input type="checkbox"><span class="editable" contenteditable="true">留一个完全不安排的下午</span></label></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="shell"><div class="footer-inner"><div><div class="eyebrow">A living itinerary</div><h2 class="editable" contenteditable="true">这份攻略，<br>等你填满。</h2></div><p class="editable" contenteditable="true">点击页面上的文字或金额即可编辑。编辑完成后点击“保存编辑”，下次打开本文件仍会保留内容。</p></div><div class="footer-bottom"><span>FAMILY / BANGKOK · 2.2—2.7</span><span>Template edition · made for sharing</span></div></div></footer>
+
+  <script>
+    (() => {
+      const money = (n) => '¥ ' + Math.round(n).toLocaleString('zh-CN');
+      const totalEl = document.getElementById('budgetTotal');
+      const costs = [...document.querySelectorAll('[data-cost]')];
+      const recalc = () => {
+        let total = 0;
+        costs.forEach(el => {
+          const raw = el.textContent.replace(/[^0-9.]/g, '');
+          const value = Number(raw) || 0;
+          el.dataset.cost = String(value);
+          total += value;
+        });
+        totalEl.textContent = money(total);
+      };
+      costs.forEach(el => el.addEventListener('input', recalc));
+      recalc();
+
+      const editable = [...document.querySelectorAll('.editable')];
+      const storageKey = 'bangkok-family-trip-template-v7';
+      const snapshot = () => editable.map((el, i) => ({ i, html: el.innerHTML }));
+      const restore = () => {
+        try {
+          const saved = JSON.parse(localStorage.getItem(storageKey) || '[]');
+          saved.forEach(item => { if (editable[item.i]) editable[item.i].innerHTML = item.html; });
+          recalc();
+        } catch (_) {}
+      };
+      restore();
+      document.getElementById('saveBtn').addEventListener('click', (event) => {
+        localStorage.setItem(storageKey, JSON.stringify(snapshot()));
+        const btn = event.currentTarget;
+        const original = btn.textContent;
+        btn.textContent = '已保存 ✓';
+        setTimeout(() => btn.textContent = original, 1500);
+      });
+      document.getElementById('printBtn').addEventListener('click', () => window.print());
+
+      document.querySelectorAll('.map-marker[data-target]').forEach(marker => {
+        const jump = () => document.getElementById(marker.dataset.target)?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        marker.addEventListener('click', jump);
+        marker.addEventListener('keydown', event => { if (event.key === 'Enter' || event.key === ' ') { event.preventDefault(); jump(); } });
+      });
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('is-visible'); observer.unobserve(entry.target); } });
+      }, { threshold: .12 });
+      document.querySelectorAll('.reveal, .stagger').forEach(el => observer.observe(el));
+    })();
+  </script>
+</body>
+</html>
